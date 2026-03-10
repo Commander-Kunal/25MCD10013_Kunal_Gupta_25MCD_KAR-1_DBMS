@@ -20,6 +20,8 @@ VALUES
 
 --Selecting distinct pairs of customers 
 SELECT DISTINCT
+    p1.product_id,
+    p1.purchase_date,
     p1.customer_id AS CustomerA,
     p2.customer_id AS CustomerB
 FROM Purchases p1
